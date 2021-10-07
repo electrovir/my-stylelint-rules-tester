@@ -1,0 +1,30 @@
+{
+    "name": "my-stylelint-rules-tester",
+    "private": true,
+    "homepage": "https://github.com/electrovir/my-stylelint-rules-tester#readme",
+    "bugs": {
+        "url": "https://github.com/electrovir/my-stylelint-rules-tester/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/electrovir/my-stylelint-rules-tester.git"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "electrovir",
+        "url": "https://github.com/electrovir"
+    },
+    "scripts": {
+        "format": "virmator format write",
+        "prepublishOnly": "npm run test:full",
+        "spellcheck": "virmator spellcheck",
+        "test": "!(npx stylelint styles/*.css)",
+        "test:full": "npm test && npm run spellcheck && virmator format check"
+    },
+    "devDependencies": {
+        "stylelint": "^13.13.1",
+        "stylelint-plugin-color": "^1.1.7",
+        "stylelint-plugin-import": "^1.0.6",
+        "virmator": "^1.2.0"
+    }
+}

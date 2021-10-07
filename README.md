@@ -1,0 +1,1 @@
+# my-stylelint-rules-tester

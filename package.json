@@ -23,8 +23,8 @@
     },
     "devDependencies": {
         "stylelint": "^13.13.1",
-        "stylelint-plugin-color": "^1.1.7",
-        "stylelint-plugin-import": "^1.0.6",
+        "stylelint-plugin-color": "^1.1.8",
+        "stylelint-plugin-import": "^1.0.7",
         "virmator": "^1.2.0"
     }
 }

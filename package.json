@@ -18,13 +18,15 @@
         "format": "virmator format write",
         "prepublishOnly": "npm run test:full",
         "spellcheck": "virmator spellcheck",
+        "start": "npm test",
         "test": "!(npx stylelint styles/*.css)",
         "test:full": "npm test && npm run spellcheck && virmator format check"
     },
     "devDependencies": {
         "stylelint": "^13.13.1",
-        "stylelint-plugin-color": "^1.1.8",
-        "stylelint-plugin-import": "^1.0.7",
-        "virmator": "^1.2.0"
+        "stylelint-plugin-color": "^1.1.10",
+        "stylelint-plugin-import": "^1.0.8",
+        "stylelint-plugin-property": "^1.1.0",
+        "virmator": "^1.3.2"
     }
 }

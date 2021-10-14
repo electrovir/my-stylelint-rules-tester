@@ -1,0 +1,24 @@
+/* blocked */
+div {
+    float: right;
+}
+
+/* blocked */
+span {
+    font-family: sans-serif;
+}
+
+/* not blocked! */
+input {
+    font-family: inherit;
+}
+
+/* not blocked! */
+input {
+    font-family: my-font;
+}
+
+/* blocked */
+input {
+    font-family: your-font;
+}

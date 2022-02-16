@@ -1,5 +1,9 @@
 module.exports = {
-    plugins: ['stylelint-plugin-color', 'stylelint-plugin-import', 'stylelint-plugin-property'],
+    plugins: [
+        'stylelint-plugin-color',
+        'stylelint-plugin-import',
+        'stylelint-plugin-property',
+    ],
     rules: {
         'plugin-color/color-types': {
             mode: 'require',
@@ -16,8 +20,15 @@ module.exports = {
                 {
                     property: 'font-family',
                     exceptions: {
-                        values: ['inherit', 'unset', /my-.*/],
-                        selectors: ['input', 'select'],
+                        values: [
+                            'inherit',
+                            'unset',
+                            /my-.*/,
+                        ],
+                        selectors: [
+                            'input',
+                            'select',
+                        ],
                     },
                 },
             ],
